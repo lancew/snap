@@ -8,5 +8,8 @@ before_install:
   - cpanm Moose
   - cpanm Games::Cards
 
+install:
+  - echo OK
+
 script:
   - prove
