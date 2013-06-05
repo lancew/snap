@@ -13,9 +13,12 @@ $Deck->shuffle;
 my $player1 = Player->new;
 my $player2 = Player->new;
 
-#$player1->hand(new Games::Cards::Hand "Player1");
 
+my $hand1 = new Games::Cards::Hand $Snap, "Player 1";
+$Deck->give_cards($hand1, 26);
 
-$Deck->give_cards($hand1, 25);
+my $hand2 = new Games::Cards::Hand $Snap, "Player 2";
+$Deck->give_cards($hand2, 26);
 
-say $hand1;
+say $hand1->print("short");
+say $hand2->print("short");
