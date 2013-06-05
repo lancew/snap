@@ -14,11 +14,11 @@ my $player1 = Player->new;
 my $player2 = Player->new;
 
 
-my $hand1 = new Games::Cards::Hand $Snap, "Player 1";
-$Deck->give_cards($hand1, 26);
+$player1->hand(new Games::Cards::Hand $Snap, "Player 1");
+$Deck->give_cards($player1->hand, 26);
 
-my $hand2 = new Games::Cards::Hand $Snap, "Player 2";
-$Deck->give_cards($hand2, 26);
+$player2->hand(new Games::Cards::Hand $Snap, "Player 2");
+$Deck->give_cards($player2->hand, 26);
 
-say $hand1->print("short");
-say $hand2->print("short");
+say $player1->hand->print("short");
+say $player1->hand->print("short");
