@@ -36,7 +36,7 @@ if($turn == 1)
 }
 
 
-while ( $player1->hand->size > 0 && $player1->hand->size > 0 ) {
+while ( $player1->hand->size > 0 && $player2->hand->size > 0 ) {
     	
     if ($turn % 2) 
     {
@@ -67,7 +67,7 @@ while ( $player1->hand->size > 0 && $player1->hand->size > 0 ) {
 
 
    say "Turn: ",$turn," Pile: ",$pile->size," P1: ",$player1->hand->size," P2: ",$player2->hand->size;
-	sleep(1);
+#	sleep(1);
    $turn++;
 
 }
