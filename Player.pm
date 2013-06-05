@@ -11,5 +11,4 @@ has 'hand' => (
     isa => 'Games::Cards::Hand'
 );
 
-
 1;
