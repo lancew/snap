@@ -2,7 +2,7 @@
 ====
 snap
 ====
-`
+<pre>
 perl ./snap.pl
 pile: Pile: (none)
 
@@ -71,4 +71,4 @@ Player 1: 0
 Player 2: 1
 PLAYER 2 Wins!!!
 -----------------------------------------
-`
+</pre>
