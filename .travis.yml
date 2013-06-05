@@ -7,3 +7,6 @@ perl:
 before_install:
   - cpanm Moose
   - cpanm Games::Cards
+
+script:
+  - prove
